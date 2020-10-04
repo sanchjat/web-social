@@ -1,0 +1,90 @@
+<html>
+    <head>
+    <title>AAAAA</title>
+        <link href="../app.component.css" rel="stylesheet" />
+        <link href="../css/magnific-popup.min.css" rel="stylesheet" />
+    <link href="../css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+    
+        <!-- Navigation-->
+        
+        <section class="page-section-top bg-dark text-white ">
+        
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Revelera</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h3>
+    this is testing
+    </h3>
+thisis
+</section>
+
+  <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+  <ul *ngIf="auth.user$ | async as user">
+      <li>{{ user.name }}</li>
+      <li>{{ user.email }}</li>
+    </ul>
+      <button (click)="auth.logout({ returnTo: document.location.origin })">
+        Log out
+      </button>
+      <app-root1></app-root1>
+    </ng-container>
+
+    <ng-template #loggedOut>
+    
+      <button (click)="auth.loginWithRedirect()">Log in</button>
+    </ng-template>
+    
+    
+     <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <hr class="divider my-4" />
+                    <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an
+                        email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                    <div>+1 (555) 123-4567</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                    <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                </div>    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div>
+        </div>
+    </footer>
+            </div>
+        </div>
+    </section>   
+        <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div>
+        </div>
+    </footer>
+      </body>
+    </html>

@@ -1,0 +1,118 @@
+.card {
+  height: 370px;
+  margin-top: 70px;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.social_icon span:hover {
+  color: #da362d;
+  cursor: pointer;
+}
+
+.card-header h3 {
+  color: white;
+}
+
+.social_icon {
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #da362d;
+  color: #fff;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: #fff;
+  background-color: #da362d;
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: #fff;
+  background-color: #FF3B30;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+.btnBox {
+  text-align: center;
+}
+
+.btnBox button {
+  font-size: 11px;
+  margin: 10px 0;
+}
+.page-section-top{
+  padding: 8rem 0 0;
+}
+table.dataTable {
+  color: #fff !important;
+  font-size: 12px;
+}
+.table th, .table td {
+  padding: 0.5rem;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_info {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  font-size: 12px;
+}
+form.selectForm {
+  width: 600px;
+  margin: 0 auto;
+}
+.selectFormrow {
+  background-color: #495158;
+  padding: 30px;
+}
+@media only screen and (max-width: 991px) {
+  form.selectForm {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mr-sm-2, .mx-sm-2 {
+    margin: 0 0 10px !important;
+}
+  }
