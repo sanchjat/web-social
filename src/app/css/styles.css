@@ -1679,22 +1679,46 @@ pre code {
     margin-left: 91.6666666667%;
   }
 }
-.table {
+.mat-table {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
 }
-.table th,
-.table td {
+
+
+.cdk-header-cell {
+    color: white;
+}
+
+.cdk-column-job_date{
+    width:20%;
+    color: white;
+}
+
+.cdk-column-new_jobs{
+    width:30%;
+    color: white;
+    text-align: center;
+}
+
+
+.cdk-column-total_jobs{
+    width:40%;
+    color: white;
+    text-align: center;
+}
+
+.mat-table th,
+.mat-table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
-.table thead th {
+.mat-table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
-.table tbody + tbody {
+.mat-table tbody + tbody {
   border-top: 2px solid #dee2e6;
 }
 
@@ -1703,15 +1727,15 @@ pre code {
   padding: 0.3rem;
 }
 
-.table-bordered {
+.cdk-table {
   border: 1px solid #dee2e6;
 }
-.table-bordered th,
-.table-bordered td {
+.cdk-table th,
+.cdk-table td {
   border: 1px solid #dee2e6;
 }
-.table-bordered thead th,
-.table-bordered thead td {
+.cdk-table thead th,
+.cdk-table thead td {
   border-bottom-width: 2px;
 }
 
@@ -1731,39 +1755,39 @@ pre code {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-primary,
-.table-primary > th,
-.table-primary > td {
+.mat-table-primary,
+.mat-table-primary > th,
+.mat-table-primary > td {
   background-color: #fcd3c8;
 }
-.table-primary th,
-.table-primary td,
-.table-primary thead th,
-.table-primary tbody + tbody {
+.mat-table-primary th,
+.mat-table-primary td,
+.mat-table-primary thead th,
+.mat-table-primary tbody + tbody {
   border-color: #f9ad99;
 }
 
-.table-hover .table-primary:hover {
+.mat-table-hover .mat-table-primary:hover {
   background-color: #fbc0b0;
 }
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
+.mat-table-hover .mat-table-primary:hover > td,
+.mat-table-hover .mat-table-primary:hover > th {
   background-color: #fbc0b0;
 }
 
-.table-secondary,
-.table-secondary > th,
-.table-secondary > td {
+.mat-table-secondary,
+.mat-table-secondary > th,
+.mat-table-secondary > td {
   background-color: #d6d8db;
 }
-.table-secondary th,
-.table-secondary td,
-.table-secondary thead th,
-.table-secondary tbody + tbody {
+.mat-table-secondary th,
+.mat-table-secondary td,
+.mat-table-secondary thead th,
+.mat-table-secondary tbody + tbody {
   border-color: #b3b7bb;
 }
 
-.table-hover .table-secondary:hover {
+.mat-table-hover .mat-table-secondary:hover {
   background-color: #c8cbcf;
 }
 .table-hover .table-secondary:hover > td,
@@ -2474,11 +2498,13 @@ fieldset:disabled a.btn {
   background-color: #dc3545;
   border-color: #dc3545;
 }
+
 .btn-primary:hover {
   color: #fff;
   background-color: #FF3B30;
   border-color: #FF3B30;
 }
+
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
   background-color: #FF3B30;
@@ -10163,3 +10189,7 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+
+::ng-deep .mat-icon-button:hover { color: #fff; background: #FF3B30;}
+

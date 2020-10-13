@@ -4,9 +4,12 @@ import { ChartsModule } from 'ng2-charts';
 import { GoogleChartsModule } from 'angular-google-charts';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table' 
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { AppComponent } from './app.component';
 
 
 // Import the module from the SDK
@@ -22,7 +25,10 @@ import { AuthButtonComponent } from './auth-button/auth-button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
     ReactiveFormsModule,
     ChartsModule,
     GoogleChartsModule,
