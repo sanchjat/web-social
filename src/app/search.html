@@ -24,7 +24,7 @@
     <section class="page-section bg-dark text-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div style="width:100%;">
                         <div class="chart-wrapper">
                             <canvas baseChart 
@@ -40,7 +40,7 @@
                    </div>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                         <div class="mat-elevation-z8">
                           <mat-table [dataSource]="dataSource">
 
@@ -66,7 +66,7 @@
                             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                           </mat-table>
 
-                          <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+                          <mat-paginator [pageSizeOptions]="[100, 1000, 2000]" showFirstLastButtons></mat-paginator>
                         </div>
                 </div>
             </div>

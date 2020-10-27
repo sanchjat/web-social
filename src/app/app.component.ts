@@ -79,7 +79,24 @@ export class AppComponent implements AfterViewInit{
       }
       this.dataSource = new MatTableDataSource<PeriodicElement>(tableData);
       this.dataSource.paginator = this.paginator;
-      that.lineChartData = [{data: new_job_openings, label: "New Jobs"},{data: total_jobs, label:"Total jobs"},]
+      that.lineChartData = [
+                            {
+                                data: new_job_openings, 
+                                label: "New Jobs", 
+                                yAxisID: "y-axis-1",
+                                borderColor: "rgb(255, 99, 132)",
+				                backgroundColor: "rgb(255, 99, 132)",
+				                fill: false,
+                            },
+                            {
+                                data: total_jobs, 
+                                label:"Total jobs",
+                                yAxisID: "y-axis-2",
+                                borderColor: "rgb(54, 162, 235)",
+				                backgroundColor: "rgb(54, 162, 235)",
+				                fill: false,                                
+                            },
+                           ]
       that.lineChartLabels = labels
     }) 
         
@@ -97,13 +114,41 @@ export class AppComponent implements AfterViewInit{
 
 
       lineChartData: ChartDataSets[] = [
-        { data: [85, 72, 78, 75, 77, 75], label: 'Jobs' },
+        { 
+        data: [85, 72, 78, 75, 77, 75], 
+        label: 'Jobs',
+        borderColor: "rgb(255, 99, 132)",
+		backgroundColor: "rgb(255, 99, 132)",
+		fill: false,
+		},
+        { 
+        data: [85, 72, 78, 75, 77, 75],
+        label: 'Jobs' ,
+        borderColor: "rgb(54, 162, 235)",
+		backgroundColor: "rgb(54, 162, 235)",
+		fill: false,
+		},
       ];
 
       lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
-      lineChartOptions = {
-        responsive: true,
-      };
+
+
+        lineChartOptions: ChartOptions = {
+            responsive: true,
+            scales: {
+              yAxes: [
+                {
+                  position: "left",
+                  id: "y-axis-1"
+                },
+                {
+                  position: "right",
+                  id: "y-axis-2"
+                }
+              ]
+            }
+          };
+
 
       lineChartColors: Color[] = [
         {
