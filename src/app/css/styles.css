@@ -10193,3 +10193,22 @@ header.masthead h1 {
 
 ::ng-deep .mat-icon-button:hover { color: #fff; background: #FF3B30;}
 
+:host ::ng-deep .mat-tab-label-active {
+    border-width: 9px !important;
+    border-style: solid;
+    border-color: orange;
+  }
+:host ::ng-deep .mat-tab-label {
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+  }
+:host ::ng-deep .mat-ripple-element {
+    display:none;
+  }
+:host ::ng-deep .mat-tab-body {
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+  }
+

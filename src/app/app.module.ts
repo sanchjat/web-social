@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ChartsModule } from 'ng2-charts';
 import { GoogleChartsModule } from 'angular-google-charts';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
@@ -10,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table' 
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // Import the module from the SDK
@@ -31,6 +33,8 @@ import { AuthButtonComponent } from './auth-button/auth-button.component';
     MatPaginatorModule,
     ReactiveFormsModule,
     ChartsModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
     GoogleChartsModule,
     AuthModule.forRoot({
       domain: 'aurodata.auth0.com',
